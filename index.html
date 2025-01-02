@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembukuan Keuangan</title>
+  <link rel="stylesheet" href="CSS/Styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pembukuan Keuangan</h1>
+
+    <!-- Form Input Transaksi -->
+    <form id="finance-form">
+      <input type="text" id="description" placeholder="Deskripsi Transaksi" required>
+      <input type="number" id="amount" placeholder="Jumlah (Rp)" required>
+      <select id="type">
+        <option value="income">Pemasukan</option>
+        <option value="expense">Pengeluaran</option>
+      </select>
+      <button type="submit">Tambah Transaksi</button>
+    </form>
+
+    <!-- Ringkasan Keuangan -->
+    <div id="summary">
+      <h3>Ringkasan Keuangan</h3>
+      <p>Pemasukan: <span id="total-income">Rp 0</span></p>
+      <p>Pengeluaran: <span id="total-expense">Rp 0</span></p>
+      <p>Saldo: <span id="total-balance">Rp 0</span></p>
+    </div>
+
+    <!-- Daftar Transaksi -->
+    <h3>Daftar Transaksi</h3>
+    <ul id="transaction-list"></ul>
+  </div>
+  <script src="JAVA SCRIPT/script.js"></script>
+</body>
+</html>
